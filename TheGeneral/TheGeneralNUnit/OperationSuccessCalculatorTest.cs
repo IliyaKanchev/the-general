@@ -30,23 +30,51 @@ namespace TheGeneralNUnit
         }
 
         [Test()]
-        public void TestAttack()
+        public void TestAttackFalure()
         {
             int x = 100;
             int y = 100;
             bool expected = ExpectedAttackSuccesful(x, y);
+            bool calculated = _calc.IsAttackSuccesful(x, y);
 
-            Assert.AreEqual(expected, _calc.IsAttackSuccesful(x, y));
+            Console.WriteLine("# attack falure: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
+            Assert.AreEqual(expected, calculated);
         }
 
         [Test()]
-        public void TestDefend()
+        public void TestAttackSuccess()
+        {
+            int x = 7;
+            int y = 8;
+            bool expected = ExpectedAttackSuccesful(x, y);
+            bool calculated = _calc.IsAttackSuccesful(x, y);
+
+            Console.WriteLine("# attack success: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
+            Assert.AreEqual(expected, calculated);
+        }
+
+        [Test()]
+        public void TestDefendFailure()
         {
             int x = 100;
             int y = 100;
             bool expected = ExpectedDefenceSuccesful(x, y);
+            bool calculated = _calc.IsDefenceSuccesful(x, y);
 
-            Assert.AreEqual(expected, _calc.IsDefenceSuccesful(x, y));
+            Console.WriteLine("# defend falure: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
+            Assert.AreEqual(expected, calculated);
+        }
+
+        [Test()]
+        public void TestDefendSuccess()
+        {
+            int x = 5;
+            int y = 5;
+            bool expected = ExpectedDefenceSuccesful(x, y);
+            bool calculated = _calc.IsDefenceSuccesful(x, y);
+
+            Console.WriteLine("# defend success: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
+            Assert.AreEqual(expected, calculated);
         }
     }
 }
