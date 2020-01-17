@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGeneralCore", "TheGeneralCore\TheGeneralCore.csproj", "{F3D74C4B-EC4B-4CF2-ABF5-B3CD54428600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGeneralTest", "TheGeneralTest\TheGeneralTest.csproj", "{3D0BF80B-F01E-495E-853B-ACB4D67F4C22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGeneralNUnit", "TheGeneralNUnit\TheGeneralNUnit.csproj", "{5917CD32-DA96-4C9C-96C9-B1A5EEEEE39C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,9 @@ Global
 		{F3D74C4B-EC4B-4CF2-ABF5-B3CD54428600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3D74C4B-EC4B-4CF2-ABF5-B3CD54428600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3D74C4B-EC4B-4CF2-ABF5-B3CD54428600}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D0BF80B-F01E-495E-853B-ACB4D67F4C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D0BF80B-F01E-495E-853B-ACB4D67F4C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D0BF80B-F01E-495E-853B-ACB4D67F4C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D0BF80B-F01E-495E-853B-ACB4D67F4C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5917CD32-DA96-4C9C-96C9-B1A5EEEEE39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5917CD32-DA96-4C9C-96C9-B1A5EEEEE39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5917CD32-DA96-4C9C-96C9-B1A5EEEEE39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5917CD32-DA96-4C9C-96C9-B1A5EEEEE39C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
