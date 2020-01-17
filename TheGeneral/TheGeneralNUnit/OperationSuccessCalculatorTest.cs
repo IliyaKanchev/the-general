@@ -7,7 +7,7 @@ namespace TheGeneralNUnit
     [TestFixture()]
     public class OperationSuccessCalculatorTest
     {
-        private OperationSuccessCalculator _calc;
+        private IOperationSuccessCalculator _calc;
 
         public OperationSuccessCalculatorTest()
         {

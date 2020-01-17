@@ -1,7 +1,7 @@
 ﻿
 namespace TheGeneralCore
 {
-
+    // A dummy library class that implements 
     public class OperationSuccessCalculator : IOperationSuccessCalculator
     {
         // I think this also should apply to the attack/defence calculation.
