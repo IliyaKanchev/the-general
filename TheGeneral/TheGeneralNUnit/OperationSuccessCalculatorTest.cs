@@ -76,5 +76,29 @@ namespace TheGeneralNUnit
             Console.WriteLine("# defend success: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
             Assert.AreEqual(expected, calculated);
         }
+
+        [Test()]
+        public void TestAttackOutsedeField()
+        {
+            int x = 210;
+            int y = 5;
+            bool expected = ExpectedAttackSuccesful(x, y);
+            bool calculated = _calc.IsAttackSuccesful(x, y);
+
+            Console.WriteLine("# attack outside field: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
+            Assert.AreEqual(expected, calculated);
+        }
+
+        [Test()]
+        public void TestDefenceOutsedeField()
+        {
+            int x = 1;
+            int y = 315;
+            bool expected = ExpectedDefenceSuccesful(x, y);
+            bool calculated = _calc.IsDefenceSuccesful(x, y);
+
+            Console.WriteLine("# attack outside field: x: {0}, y: {1}, expected: {2}, calculated: {3}", x, y, expected, calculated);
+            Assert.AreEqual(expected, calculated);
+        }
     }
 }
